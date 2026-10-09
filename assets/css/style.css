@@ -1,0 +1,18 @@
+.heading{
+    color: white;
+background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+body{
+    background-repeat: no-repeat;
+background-image: url("https://thumbs.dreamstime.com/b/document-management-data-system-business-internet-concept-document-management-data-system-business-internet-concept-149702877.jpg");
+background-size: cover;
+height: 100vh;
+width: 100%;
+background-attachment: fixed;
+
+}
+
+.mylist{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}

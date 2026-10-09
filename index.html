@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo CRUD 2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+    <style>
+        .spinner{
+           position: fixed;
+            inset: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+   
+        }
+    </style>
+</head>
+
+<body>
+        <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 mt-4">
+                <div class="card">
+                    <div class="card-header heading  d-flex justify-content-between align-items-center"><h3><i class="fa-solid fa-clock-rotate-left"></i>Daily Record</h3>
+                        <button  id="AddStatus" type="submit" class="btn btn-sm btn-dark" form="Form">+Add Status</button>
+                            <button id="UpdateStatus" type="button"
+                                class="btn btn-sm  btn-dark d-none">Update Status</button></div>
+                    <div class="card-body">
+                        <form id="Form" class="myform">
+                            <div class="form-group">
+                                <label for="todoName">Documents:</label>
+                                <select  id="Documents">
+                                    <option value="">Select</option>
+                                     <option value="PanCard">Pan Card</option>
+                                     <option value="Adhaar">Adhaar</option>
+                                    <option value="LC">LC</option>
+                                    <option value="Domecile">Domecile</option>
+
+
+
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="isChecked">Status Checked:</label>
+                                <select id="isChecked">
+
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+
+                                                  </form>
+                    </div>
+                </div>
+            
+            
+            
+                    
+                        <ul id="BookContainer" class="list-group  mylist mt-5">
+                            <!-- <li class="list-group-item d-flex justify-content-between">
+                                <div>
+                                    <input type="checkbox">
+                                    <strong>Adhar</strong>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+                                    <i class="fa-solid fa-trash-can fa-2x text-danger"></i>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+    
+
+    <div class="spinner d-none" id="spinner">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
